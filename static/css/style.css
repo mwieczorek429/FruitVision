@@ -1,0 +1,84 @@
+body{
+    background-color: #D9D9D9;
+    font-family: Helvetica;
+    font-size: 16px;
+}
+
+#logo
+{
+    display: block;
+    margin: 50px auto 30px;
+}
+#logo, img{
+    max-width: 300px;
+}
+
+#dropZone{
+    display: block;
+    margin: 0 auto 28px;
+    max-width: 400px;
+    display: block;
+    background-color: #D1D1D1;
+    padding: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.drop-content{
+    color: white;
+    padding: 25px;
+    border: white dashed 3px;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.button{
+    margin: 0 auto;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 150px;
+    display: block;
+    background-color: #00A160;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+.button div{
+    padding: 5px 0;
+    border-radius: 5px 5px 0 0;
+    background-color: #36C673;
+}
+
+#result{
+    max-width: 400px;
+    display: none;
+    margin: 50px auto;
+}
+#result img{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+#fruitPrediction{
+    padding: 20px;
+    text-align: center;
+}
+
+#details{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#toggleDetails{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}

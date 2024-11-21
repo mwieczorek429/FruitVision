@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fruit Vision</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+    <body>
+        <div id="logo">
+            <a href="{{ url_for('index') }}">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+            </a>
+        </div>
+        <div id="uploadSection">
+            <div id="dropZone" class="drop-zone">
+                <div class="drop-content">
+                    Przeciągnij plik w formacie .png, .jpg, .jpeg na to pole, a następnie kliknij "Prześlij obraz". Aplikacja przeanalizuje zdjęcie i pokaże, jakie owoce znajdują się na obrazku.
+                </div>
+            </div>
+            <a href="#" class="button disabled" id="uploadLink">
+                <div>
+                    Prześlij obraz
+                </div>
+            </a>
+        </div>
+        <div class="result" id="result">
+            <img id="resultImage" src="#" alt="Przesłany obraz">
+            <div id="fruitPrediction"></div>
+            <span id="toggleDetails">Pokaż szczegóły</span>
+            <div id="details">
+            </div>
+        </div>
+        
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    </body>
+</html>
